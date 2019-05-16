@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>js sandbox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- <div class="card-body" style="overflow-x: auto">
+        <table class="table table-striped table table-hover table-bordered">
+            <thead class="bg-gray-dark text-white">
+                <tr>
+                    <th class="text-center" style="color:red; width: 300px;"> # </th>
+                    <div style="overflow-x:scroll;">
+                        <th style="width: 150px;" class="text-center">
+                            <span title="Tried"><a href="#"><i class="fas fa-warning"
+                                        style="color: orangered"></i></a></span>
+                        </th>
+                        <th style="width: 150px;" class="text-center">
+                            <span title="Tried"><a href="#"><i class="fas fa-warning"
+                                        style="color: orangered"></i></a></span>
+                        </th>
+                        <th style="width: 150px;" class="text-center">
+                            <span title="Tried"><a href="#"><i class="fas fa-warning"
+                                        style="color: orangered"></i></a></span>
+                        </th>
+                        <th style="width: 150px;" class="text-center">
+                            <span title="Tried"><a href="#"><i class="fas fa-warning"
+                                        style="color: orangered"></i></a></span>
+                        </th>
+                        <th style="width: 150px;" class="text-center">
+                            <span title="Tried"><a href="#"><i class="fas fa-warning"
+                                        style="color: orangered"></i></a></span>
+                        </th>
+                        <th style="width: 150px;" class="text-center">
+                            <span title="Tried"><a href="#"><i class="fas fa-warning"
+                                        style="color: orangered"></i></a></span>
+                        </th>
+                        <th style="width: 150px;" class="text-center">
+                            <span title="Tried"><a href="#"><i class="fas fa-warning"
+                                        style="color: orangered"></i></a></span>
+                        </th>
+                        <th style="width: 150px;" class="text-center">
+                            <span title="Tried"><a href="#"><i class="fas fa-warning"
+                                        style="color: orangered"></i></a></span>
+                        </th>
+                    </div>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>lol</td>
+                    <div style="overflow-x:auto">
+                        <td class="text-center disabled">
+                            <a href="http://"></a>
+                            <a href="#"><i class="fas fa-check solved" style="color:green"></i></a>
+                        </td>
+                        <td class="text-center disabled">
+                            <a href="http://"></a>
+                            <a href="#"><i class="fas fa-check solved" style="color:green"></i></a>
+                        </td>
+                        <td class="text-center disabled">
+                            <a href="http://"></a>
+                            <a href="#"><i class="fas fa-check solved" style="color:green"></i></a>
+                        </td>
+                        <td class="text-center disabled">
+                            <a href="http://"></a>
+                            <a href="#"><i class="fas fa-check solved" style="color:green"></i></a>
+                        </td>
+                        <td class="text-center disabled">
+                            <a href="http://"></a>
+                            <a href="#"><i class="fas fa-check solved" style="color:green"></i></a>
+                        </td>
+                        <td class="text-center disabled">
+                            <a href="http://"></a>
+                            <a href="#"><i class="fas fa-check solved" style="color:green"></i></a>
+                        </td>
+                        <td class="text-center disabled">
+                            <a href="http://"></a>
+                            <a href="#"><i class="fas fa-check solved" style="color:green"></i></a>
+                        </td>
+                        <td class="text-center disabled">
+                            <a href="http://"></a>
+                            <a href="#"><i class="fas fa-check solved" style="color:green"></i></a>
+                        </td>
+                    </div>
+                </tr>
+            </tbody>
+        </table>
+    </div> -->
+
+    <div class="container pt-100">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid"
+                                            src="http://ksb-soft.uz/wp-content/uploads/2018/08/speaker1.jpg"
+                                            alt="card image"></p>
+                                    <h4 class="card-title">Sunlimetech</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Sint error commodi et officiis corporis a blanditiis, provident nesciunt
+                                        reprehenderit ullam.</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Sunlimetech</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                        elit. Eum itaque excepturi nesciunt nemo obcaecati eos consequuntur sapiente,
+                                        doloribus voluptatibus quis quaerat reprehenderit,
+                                        dignissimos vitae nam! Praesentium ratione harum suscipit alias?.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid"
+                                            src="http://ksb-soft.uz/wp-content/uploads/2018/08/speaker1.jpg"
+                                            alt="card image"></p>
+                                    <h4 class="card-title">Sunlimetech</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Sint error commodi et officiis corporis a blanditiis, provident nesciunt
+                                        reprehenderit ullam.</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Sunlimetech</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                        elit. Eum itaque excepturi nesciunt nemo obcaecati eos consequuntur sapiente,
+                                        doloribus voluptatibus quis quaerat reprehenderit,
+                                        dignissimos vitae nam! Praesentium ratione harum suscipit alias?.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid"
+                                            src="http://ksb-soft.uz/wp-content/uploads/2018/08/speaker1.jpg"
+                                            alt="card image"></p>
+                                    <h4 class="card-title">Sunlimetech</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Sint error commodi et officiis corporis a blanditiis, provident nesciunt
+                                        reprehenderit ullam.</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Sunlimetech</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                        elit. Eum itaque excepturi nesciunt nemo obcaecati eos consequuntur sapiente,
+                                        doloribus voluptatibus quis quaerat reprehenderit,
+                                        dignissimos vitae nam! Praesentium ratione harum suscipit alias?.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
